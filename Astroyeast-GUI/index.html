@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Bioreactor Control System</title>
+</head>
+<body>
+    <section class="graphs">
+        <div class="temperature">
+            <div class="outer">
+                <div class="inner">
+                    <div id="numberTemp"></div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                <defs>
+                   <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#d2691e" />
+                      <stop offset="100%" stop-color="#f2d07a" />
+                   </linearGradient>
+                </defs>
+                <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                </svg>
+        
+                <div class="graphTag">Temperature</div>
+            </div>
+        
+        <div class="progress">
+            <div class="outer">
+                <div class="inner">
+                    <div id="numberProgress"></div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                <defs>
+                    <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#d2691e" />
+                        <stop offset="100%" stop-color="#f2d07a" />
+                    </linearGradient>
+                </defs>
+                <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+            </svg>    
+                
+            <div class="graphTag">Progress</div>
+        </div>  
+    </section>
+   
+   <article class="controls">
+    <label class="switch">
+        <input type="checkbox"> <span class="slider"></span>
+    </label>
+
+    <label class="switch"> Draining Cycle
+        <input type="checkbox"> <span class="slider"></span>
+    </label>
+   </article>
+    
+
+    <script type = "module" src="main.js"></script>
+</body>
+</html>
